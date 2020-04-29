@@ -1,5 +1,7 @@
 # Rectangle
 
+This version of Rectangle Includes a Priority Grid / Center focus mode for wide screens. e.g 32:9 ratio screens. This means that the shortcuts, Option + Shift + 1 will send the window to the first Fourth of the screen, Option + Shift + 2 will send the window to the Center 50% of the screen. Option + Shift + 3 will send the window to the Last fourth of the screen
+
 ![](https://github.com/rxhanson/Rectangle/workflows/Build/badge.svg)
 
 Rectangle is a window management app based on Spectacle, written in Swift.
