@@ -41,7 +41,10 @@ enum WindowAction: Int {
     moveRight = 26,
     moveUp = 27,
     moveDown = 28,
-    almostMaximize = 29
+    almostMaximize = 29,
+    firstFourth = 30,
+    centerFocus = 31,
+    lastFourth = 32
     
     // Order matters here - it's used in the menu
     static let active = [leftHalf, rightHalf, topHalf, bottomHalf,
@@ -49,7 +52,7 @@ enum WindowAction: Int {
                          firstThird, firstTwoThirds, centerThird, lastTwoThirds, lastThird,
                          maximize, almostMaximize, maximizeHeight, smaller, larger, center, restore,
                          nextDisplay, previousDisplay,
-                         moveLeft, moveRight, moveUp, moveDown]
+                         moveLeft, moveRight, moveUp, moveDown, firstFourth, centerFocus, lastFourth]
     
     func post() {
         NotificationCenter.default.post(name: notificationName, object: ExecutionParameters(self))
@@ -97,6 +100,9 @@ enum WindowAction: Int {
         case .moveUp: return "moveUp"
         case .moveDown: return "moveDown"
         case .almostMaximize: return "almostMaximize"
+        case .firstFourth: return "firstFourth"
+        case .centerFocus: return "centerFocus"
+        case .lastFourth: return "lastFourth"
         }
     }
 
@@ -183,6 +189,15 @@ enum WindowAction: Int {
         case .almostMaximize:
             key = "e57-QJ-6bL.title"
             value = "Almost Maximize"
+        case .firstFourth:
+            key = ""
+            value = "First fourth"
+        case .centerFocus:
+            key = ""
+            value = "Center Focus"
+        case .lastFourth:
+            key = ""
+            value = "Last fourth"
         }
         
         return NSLocalizedString(key, tableName: "Main", value: value, comment: "")
@@ -251,6 +266,9 @@ enum WindowAction: Int {
         case .centerThird: return Shortcut( ctrl|alt, kVK_ANSI_F )
         case .lastTwoThirds: return Shortcut( ctrl|alt, kVK_ANSI_T )
         case .lastThird: return Shortcut( ctrl|alt, kVK_ANSI_G )
+        case .firstFourth: return Shortcut( shift|alt, kVK_ANSI_1 )
+        case .centerFocus: return Shortcut( shift|alt, kVK_ANSI_2 )
+        case .lastFourth: return Shortcut( shift|alt, kVK_ANSI_3 )
         default: return nil
         }
     }
@@ -283,6 +301,9 @@ enum WindowAction: Int {
         case .moveUp: return NSImage(imageLiteralResourceName: "moveUpTemplate")
         case .moveDown: return NSImage(imageLiteralResourceName: "moveDownTemplate")
         case .almostMaximize: return NSImage(imageLiteralResourceName: "almostMaximizeTemplate")
+        case .firstFourth: return NSImage(imageLiteralResourceName: "almostMaximizeTemplate")
+        case .centerFocus: return NSImage(imageLiteralResourceName: "almostMaximizeTemplate")
+        case .lastFourth: return NSImage(imageLiteralResourceName: "almostMaximizeTemplate")
         }
     }
     

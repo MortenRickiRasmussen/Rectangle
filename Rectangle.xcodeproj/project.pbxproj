@@ -72,6 +72,9 @@
 		98FA9497235A2D7600F95C4F /* RepeatedExecutionsCalculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FA9496235A2D7600F95C4F /* RepeatedExecutionsCalculation.swift */; };
 		CC0B7937429AC28C21ABF5B4 /* Pods_RectangleLauncher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2D8480CC730811C953FC1B6 /* Pods_RectangleLauncher.framework */; };
 		F0A0DFB36FCC3FCE6E184500 /* Pods_Rectangle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20A533B9F2D3215AC7B85D1F /* Pods_Rectangle.framework */; };
+		F4DA4DA324599C8400000180 /* CenterFocusCalculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DA4DA224599C8400000180 /* CenterFocusCalculation.swift */; };
+		F4DA4DA52459A32700000180 /* FirstFouthCalculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DA4DA42459A32700000180 /* FirstFouthCalculation.swift */; };
+		F4DA4DA72459A35E00000180 /* LastFourthCalculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DA4DA62459A35E00000180 /* LastFourthCalculation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -207,6 +210,9 @@
 		DE4AE568B8BDB98BF602D588 /* Pods-RectangleMAS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RectangleMAS.release.xcconfig"; path = "Target Support Files/Pods-RectangleMAS/Pods-RectangleMAS.release.xcconfig"; sourceTree = "<group>"; };
 		E2625F45B180F733E8508494 /* Pods-RectangleMAS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RectangleMAS.debug.xcconfig"; path = "Target Support Files/Pods-RectangleMAS/Pods-RectangleMAS.debug.xcconfig"; sourceTree = "<group>"; };
 		F2D8480CC730811C953FC1B6 /* Pods_RectangleLauncher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RectangleLauncher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4DA4DA224599C8400000180 /* CenterFocusCalculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterFocusCalculation.swift; sourceTree = "<group>"; };
+		F4DA4DA42459A32700000180 /* FirstFouthCalculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstFouthCalculation.swift; sourceTree = "<group>"; };
+		F4DA4DA62459A35E00000180 /* LastFourthCalculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastFourthCalculation.swift; sourceTree = "<group>"; };
 		F4F1FB66CBFB958E8BB16DCD /* Pods_RectangleMAS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RectangleMAS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -288,6 +294,9 @@
 				9821402022B3884600ABFB3F /* BottomHalfCalculation.swift */,
 				9821403022B38A0500ABFB3F /* TopHalfCalculation.swift */,
 				9821402222B3886100ABFB3F /* CenterCalculation.swift */,
+				F4DA4DA224599C8400000180 /* CenterFocusCalculation.swift */,
+				F4DA4DA42459A32700000180 /* FirstFouthCalculation.swift */,
+				F4DA4DA62459A35E00000180 /* LastFourthCalculation.swift */,
 				9821402422B3887200ABFB3F /* MaximizeCalculation.swift */,
 				9821402622B3888100ABFB3F /* ChangeSizeCalculation.swift */,
 				9821402822B3889100ABFB3F /* LowerLeftCalculation.swift */,
@@ -731,6 +740,7 @@
 				98C1008C2305F1FA006E5344 /* SubsequentExecutionMode.swift in Sources */,
 				985B9BF922BB6F5100A2E8F0 /* MessageView.swift in Sources */,
 				988D066722EB4CC0004EABD7 /* LastTwoThirdsCalculation.swift in Sources */,
+				F4DA4DA324599C8400000180 /* CenterFocusCalculation.swift in Sources */,
 				9824703F22B13FBC0037B409 /* ScreenDetection.swift in Sources */,
 				9821402B22B388A000ABFB3F /* LowerRightCalculation.swift in Sources */,
 				9821402522B3887200ABFB3F /* MaximizeCalculation.swift in Sources */,
@@ -748,9 +758,11 @@
 				98910B42231476B30066EC23 /* PrefsViewController.swift in Sources */,
 				9824702C22AFA22E0037B409 /* AccessibilityWindowController.swift in Sources */,
 				988D066122EB4C7C004EABD7 /* FirstThirdCalculation.swift in Sources */,
+				F4DA4DA52459A32700000180 /* FirstFouthCalculation.swift in Sources */,
 				988D067F22EB4EDE004EABD7 /* MoveLeftRightCalculation.swift in Sources */,
 				98C6DEF023CE191700CC0C1E /* GapCalculation.swift in Sources */,
 				98910B3E231130AF0066EC23 /* SettingsViewController.swift in Sources */,
+				F4DA4DA72459A35E00000180 /* LastFourthCalculation.swift in Sources */,
 				9824700D22AF9B7D0037B409 /* AppDelegate.swift in Sources */,
 				9824704F22B189250037B409 /* BestEffortWindowMover.swift in Sources */,
 				9824703922B0F37C0037B409 /* ShortcutManager.swift in Sources */,
